@@ -19,7 +19,7 @@
     },
     "test_settings": {
         "default": {
-            "launch_url": "https://www.tayara.tn",
+            "launch_url": "https://immo.avito.ma/fr/ai",
             "selenium_port": 4444,
             "selenium_host": "localhost",
             "silent": true,
@@ -32,7 +32,7 @@
             }
         },
         "qa": {
-            "launch_url": "https://tayara:couscous2016@beta-qa.tayara.tn/fr/",
+            "launch_url": "http://immo-qa.avito.ma/fr/ai",
             "globals": {
                 "myGlobalVar": "other value"
             },
@@ -46,7 +46,7 @@
             }
         },
         "sauce_chrome_osx": {
-            "launch_url": "https://www.tayara.tn",
+            "launch_url": "https://immo.avito.ma/fr/ai",
             "selenium_port": 80,
             "selenium_host": "ondemand.saucelabs.com",
             "silent": true,
@@ -66,7 +66,7 @@
             }
         },
         "sauce_firefox_win": {
-            "launch_url": "https://www.tayara.tn",
+            "launch_url": "https://immo.avito.ma/fr/ai",
             "selenium_port": 80,
             "selenium_host": "ondemand.saucelabs.com",
             "silent": true,
