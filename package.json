@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "nightwatch": "^0.9.16",
+    "nightwatch-custom-commands-assertions": "^1.1.0",
     "nightwatch-html-reporter": "^2.0.4"
   }
 }

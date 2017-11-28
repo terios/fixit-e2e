@@ -51,7 +51,11 @@ module.exports = {
     'step 5': function(client){
         client
             .click('input[type=submit]')
-            .pause(8000)
-            .end();
+    },
+    'step 6': function(client){
+        client
+            .waitForJqueryAjaxRequest(10000)
+            .assert.urlEquals("https://immo.avito.ma/fr/ai/success")
+            .end()
     } 
 };
