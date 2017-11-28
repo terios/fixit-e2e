@@ -3,7 +3,7 @@
     "output_folder": "reports",
     "custom_commands_path": "",
     "custom_assertions_path": "",
-    "page_objects_path": "",
+    "page_objects_path": "./pageObjects",
     "globals_path": "",
 
     "selenium": {
@@ -17,10 +17,9 @@
             "webdriver.edge.driver": ""
         }
     },
-
     "test_settings": {
         "default": {
-            "launch_url": "https://immo.avito.ma/fr/ai",
+            "launch_url": "https://www.tayara.tn",
             "selenium_port": 4444,
             "selenium_host": "localhost",
             "silent": true,
@@ -29,14 +28,16 @@
                 "path": ""
             },
             "desiredCapabilities": {
-                "browserName": "firefox",
-                "marionette": true
+                "browserName": "chrome"
             }
         },
         "qa": {
-            "launch_url": "http://immo-qa.avito.ma/fr/ai",
+            "launch_url": "https://tayara:couscous2016@beta-qa.tayara.tn/fr/",
             "globals": {
                 "myGlobalVar": "other value"
+            },
+            "desiredCapabilities": {
+                "browserName": "chrome"
             }
         },
         "chrome": {
@@ -44,10 +45,43 @@
                 "browserName": "chrome"
             }
         },
-
-        "edge": {
+        "sauce_chrome_osx": {
+            "launch_url": "https://www.tayara.tn",
+            "selenium_port": 80,
+            "selenium_host": "ondemand.saucelabs.com",
+            "silent": true,
+            "username": "terios",
+            "access_key": "04454824-1e8e-4067-a3ef-44479f1f7317",
+            "screenshots": {
+              "enabled": false,
+              "path": ""
+            },
+            "globals": {
+              "waitForConditionTimeout": 10000
+            },
             "desiredCapabilities": {
-                "browserName": "MicrosoftEdge"
+                "browserName": "chrome",
+                "platform": "OS X 10.11",
+                "version": "47"
+            }
+        },
+        "sauce_firefox_win": {
+            "launch_url": "https://www.tayara.tn",
+            "selenium_port": 80,
+            "selenium_host": "ondemand.saucelabs.com",
+            "silent": true,
+            "username": "terios",
+            "access_key": "04454824-1e8e-4067-a3ef-44479f1f7317",
+            "screenshots": {
+              "enabled": false,
+              "path": ""
+            },
+            "globals": {
+              "waitForConditionTimeout": 10000
+            },
+            "desiredCapabilities": {
+                "browserName": "firefox",
+                "platform": "Windows 10"
             }
         }
     }
